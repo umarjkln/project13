@@ -1,0 +1,241 @@
+[
+    {
+        "Region": "Central",
+        "Segment": "Consumer",
+        "Category": "Furniture",
+        "Sales": 86229.22,
+        "Profit": -3994.43
+    },
+    {
+        "Region": "Central",
+        "Segment": "Consumer",
+        "Category": "Office Supplies",
+        "Sales": 93111.48,
+        "Profit": 2583.14
+    },
+    {
+        "Region": "Central",
+        "Segment": "Consumer",
+        "Category": "Technology",
+        "Sales": 72690.74,
+        "Profit": 9975.34
+    },
+    {
+        "Region": "Central",
+        "Segment": "Corporate",
+        "Category": "Furniture",
+        "Sales": 52085.60,
+        "Profit": 2321.99
+    },
+    {
+        "Region": "Central",
+        "Segment": "Corporate",
+        "Category": "Office Supplies",
+        "Sales": 41137.70,
+        "Profit": 99.29
+    },
+    {
+        "Region": "Central",
+        "Segment": "Corporate",
+        "Category": "Technology",
+        "Sales": 64772.51,
+        "Profit": 16282.61
+    },
+    {
+        "Region": "Central",
+        "Segment": "Home Office",
+        "Category": "Furniture",
+        "Sales": 25482.34,
+        "Profit": -1198.61
+    },
+    {
+        "Region": "Central",
+        "Segment": "Home Office",
+        "Category": "Office Supplies",
+        "Sales": 32777.24,
+        "Profit": 6197.54
+    },
+    {
+        "Region": "Central",
+        "Segment": "Home Office",
+        "Category": "Technology",
+        "Sales": 32953.07,
+        "Profit": 7439.48
+    },
+    {
+        "Region": "East",
+        "Segment": "Consumer",
+        "Category": "Furniture",
+        "Sales": 114211.80,
+        "Profit": 2038.11
+    },
+    {
+        "Region": "East",
+        "Segment": "Consumer",
+        "Category": "Office Supplies",
+        "Sales": 101255.14,
+        "Profit": 19222.69
+    },
+    {
+        "Region": "East",
+        "Segment": "Consumer",
+        "Category": "Technology",
+        "Sales": 135441.23,
+        "Profit": 19930.18
+    },
+    {
+        "Region": "East",
+        "Segment": "Corporate",
+        "Category": "Furniture",
+        "Sales": 64209.05,
+        "Profit": 342.13
+    },
+    {
+        "Region": "East",
+        "Segment": "Corporate",
+        "Category": "Office Supplies",
+        "Sales": 66474.74,
+        "Profit": 13457.67
+    },
+    {
+        "Region": "East",
+        "Segment": "Corporate",
+        "Category": "Technology",
+        "Sales": 69725.57,
+        "Profit": 9822.79
+    },
+    {
+        "Region": "East",
+        "Segment": "Home Office",
+        "Category": "Furniture",
+        "Sales": 29588.98,
+        "Profit": 677.99
+    },
+    {
+        "Region": "East",
+        "Segment": "Home Office",
+        "Category": "Office Supplies",
+        "Sales": 37786.18,
+        "Profit": 8334.22
+    },
+    {
+        "Region": "East",
+        "Segment": "Home Office",
+        "Category": "Technology",
+        "Sales": 59807.19,
+        "Profit": 17709.07
+    },
+    {
+        "Region": "South",
+        "Segment": "Consumer",
+        "Category": "Furniture",
+        "Sales": 70800.20,
+        "Profit": 4616.73
+    },
+    {
+        "Region": "South",
+        "Segment": "Consumer",
+        "Category": "Office Supplies",
+        "Profit": 9190.12
+    },
+    {
+        "Region": "South",
+        "Segment": "Consumer",
+        "Category": "Technology",
+        "Profit": 13106.72
+    },
+    {
+        "Region": "South",
+        "Segment": "Corporate",
+        "Category": "Furniture",
+        "Profit": 952.03
+    },
+    {
+        "Region": "South",
+        "Segment": "Corporate",
+        "Category": "Office Supplies",
+        "Profit": 8142.66
+    },
+    {
+        "Region": "South",
+        "Segment": "Corporate",
+        "Category": "Technology",
+        "Profit": 6120.53
+    },
+    {
+        "Region": "South",
+        "Segment": "Home Office",
+        "Category": "Furniture",
+        "Profit": 1202.44
+    },
+    {
+        "Region": "South",
+        "Segment": "Home Office",
+        "Category": "Office Supplies",
+        "Profit": 2653.62
+    },
+    {
+        "Region": "South",
+        "Segment": "Home Office",
+        "Category": "Technology",
+        "Profit": 764.58
+    },
+    {
+        "Region": "West",
+        "Segment": "Consumer",
+        "Category": "Furniture",
+        "Profit": 4330.67
+    },
+    {
+        "Region": "West",
+        "Segment": "Consumer",
+        "Category": "Office Supplies",
+        "Profit": 25334.37
+    },
+    {
+        "Region": "West",
+        "Segment": "Consumer",
+        "Category": "Technology",
+        "Profit": 27785.57
+    },
+    {
+        "Region": "West",
+        "Segment": "Corporate",
+        "Category": "Furniture",
+        "Profit": 3968.67
+    },
+    {
+        "Region": "West",
+        "Segment": "Corporate",
+        "Category": "Office Supplies",
+        "Profit": 18527.70
+    },
+    {
+        "Region": "West",
+        "Segment": "Corporate",
+        "Category": "Technology",
+        "Profit": 11941.06
+    },
+    {
+        "Region": "West",
+        "Segment": "Home Office",
+        "Category": "Furniture",
+        "Profit": 3205.62
+    },
+    {
+        "Region": "West",
+        "Segment": "Home Office",
+        "Category": "Office Supplies",
+        "Profit": 8747.78
+    },
+    {
+        "Region": "West",
+        "Segment": "Home Office",
+        "Category": "Technology",
+        "Profit": 4577.02
+    }
+
+
+
+
+]

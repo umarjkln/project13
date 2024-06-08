@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Super Store</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about1" id='on_click_a'>About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2><i>Capstone Project Software Development<br>by Team 13</i></h2>
+        </section>
+    <section class="about">
+      <div class="container">
+        <div class="about-section" id = "about1">
+            <h1>About</h1>
+            <p>Welcome to Our Website</p>
+            <p>Website ini merupakan hasil kerja sama team 13-Surabaya untuk menyelesaikan tugas Capstone Project Software Development. Dalam website ini ditampilkan beberapa Visualisasi data dalam bentuk Dashboard yang merupakan hasil analisis dari modul sebelumnya yaitu Data Analitics.</p>
+        </div>
+        <script>
+          $(document).ready(function(){
+              $("#on_click_a").on('click', function(event) {
+                  event.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: $("#about1").offset().top
+                  }, 800); // 800 ms is the duration of the scroll animation
+              });
+          });
+      </script>
+        <div class="project-background-section">
+            <h2>Project Background</h2>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Superstore Background</h3>
+                    <p>Superstore merupakan sebuah perusahaan terkemuka di United State yang menjual berbagai kategori produk seperti teknologi, office supply, dan furniture.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Issue</h3>
+                    <p>Dengan meningkatnya permintaan dan persaingan ketat di pasar, Superstore ingin memahami produk, wilayah, kategori, dan segmen pelanggan mana yang harus mereka targetkan atau hindari.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Statement</h3>
+                    <p>Bagaimana meningkatkan profit pada superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Objective</h3>
+                    <p>Meningkatkan profit Superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Scope</h3>
+                    <p>Data diperoleh dari peningkatan profit pada Superstore dari tahun 2014 sampai dengan tahun 2017.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+        <section class="our-team">
+            <div class="team-section">
+              <br>
+              <br>
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-member">
+                  <img src="danny.jpg" width="200" height="200" alt="Team Member 1" class="team-image rounded-image">
+                  <p><b>Eka Surya Rizki Umardani</b></p>
+                  <p>Project Leader + Pitch Deck</p>
+                </div>
+                <div class="team-member">
+                    <img src="elga.jpg" width="200" height="200" alt="Team Member 2" class="team-image rounded-image">
+                    <p><b>Elga Syahira</b></p>
+                    <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="aida.jpg" width="200" height="200" alt="Team Member 3" class="team-image rounded-image">
+                    <p><b>Zahrotus Syaidah</b></p>
+                  <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="umar.JPG" width="200" height="200" alt="Team Member 4" class="team-image rounded-image">
+                    <p><b>Anastasius Umar Jeklin</b></p>
+                  <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="sam.jpg" width="200" height="200" alt="Team Member 5" class="team-image rounded-image">
+                    <p><b>Muhammad Khysam Firdaus</b></p>
+                  <p>Front End Engineer + Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="team-member1.jpg" width="200" height="200" alt="Team Member 6" class="team-image rounded-image">
+                    <p><b>Aqil Nabila Musaffa</b></p>
+                  <p>Front End Engineer + Website Development</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="chikka.jpg" width="200" height="200" alt="Team Member 7" class="team-image rounded-image">
+                    <p><b>Chikka Dwiyandhini Prameswari</b></p>
+                  <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="winna.jpg" width="200" height="200" alt="Team Member 8" class="team-image rounded-image">
+                    <p><b>Winna Elysia</b></p>
+                    <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="puji.jpg" width="200" height="200" alt="Team Member 9" class="team-image rounded-image">
+                    <p><b>Puji Nurhidayah</b></p>
+                    <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="aminun.jpg" width="200" height="200" alt="Team Member 10" class="team-image rounded-image">
+                    <p><b>Aminun Ihsani</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="andika.jpg" width="200" height="200" alt="Team Member 11" class="team-image rounded-image">
+                    <p><b>Andika Tri Octa Setiawan</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="diva.jpg" width="200" height="200" alt="Team Member 12" class="team-image rounded-image">
+                    <p><b>Diva Asih Azzahra</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            &copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights Reserved.
+          </div>
+    </footer>
+</body>
+</html>

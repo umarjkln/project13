@@ -1,0 +1,118 @@
+.container-form {
+  background-color: white;
+  margin: 50px auto;
+  width: 35%;
+  padding: 30px 35px;
+  border-radius: 8px;
+}
+.container-form h1 {
+  color: #072248;
+}
+.sub-title-form {
+  color: gray;
+  font-size: 11pt;
+  margin: 8px 0 18px 0;
+  line-height: 1.5;
+}
+.name-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.name-form .group-name {
+  width: 50%;
+  padding-right: 13px;
+}
+.form-group {
+  margin-bottom: 18px;
+}
+.form-input {
+  margin-top: 8px;
+  width: 95%;
+  padding: 11px 0 11px 7px;
+}
+.form-label {
+  font-weight: bold;
+  color: #072248;
+}
+.btn-submit {
+  background-color: #072248;
+  color: white;
+  width: 97%;
+  padding: 13px;
+  font-size: 11pt;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 12px;
+}
+/* Modal */
+.popup {
+  width: 300px;
+  background-color: rgb(235, 246, 255);
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+  top: 61%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 110px;
+  margin-top: -50px;
+  border-radius: 50%;
+}
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #072248;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+/* akhir modal */
+@media (max-width: 869px) {
+  .container-form {
+    width: 45%;
+  }
+  .name-form {
+    flex-direction: column;
+  }
+  .name-form .group-name {
+    width: 100%;
+    padding: 0;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 426px) {
+  .container-form {
+    width: 60%;
+  }
+  .form-label,
+  .sub-title-form,
+  .btn-submit,
+  .form-input {
+    font-size: 10pt;
+  }
+}
+/* akhir contact form */

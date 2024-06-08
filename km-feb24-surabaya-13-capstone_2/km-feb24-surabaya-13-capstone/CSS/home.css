@@ -1,0 +1,403 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1081BD;
+    color: white;
+  }
+  
+  header {
+    background-color: #072248;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+    height: 65vh; /* Set the height of the hero section to the full viewport height */
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fixbg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Set the z-index of the background image to be behind the text */
+  }
+  
+  .hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #072248;
+    text-align: center;
+    font-size: 2rem; /* atur font-size sesuai kebutuhan */
+    border-radius: 10px;
+    background-color: rgba(198, 183, 183, 0.868);
+    backdrop-filter: blur(1px); /* Add blur effect */
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px; /* Set the height of the about section to half of the viewport height */
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .about-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-section h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  
+  .about-section p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .about-title {
+    position: absolute; /* Position the title absolute to its parent element */
+    top: 50%; /* Vertically center the title */
+    left: 50%; /* Horizontally center the title */
+    transform: translate(-50%, -50%); /* Move the title up and left by half of its own width and height */
+    text-align: center; /* Center the text */
+    width: 100%; /* Make the title take up the full width of its parent element */
+    color: black; /* Set the text color */
+    padding: 10px; /* Add some padding around the title */
+    margin: 0; /* Remove the default margin */
+  }
+  
+  .text {
+    width: 60%;
+  }
+  
+  .text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .our-team {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px;
+    color: #fff;
+  }
+  
+  .team-member {
+    display: inline-block; /* Display team member sections side by side */
+    margin: 0 1em; /* Add space between team member sections */
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .team-member p {
+    margin: 0; /* Remove default margin from the paragraph */
+    font-size: 1em; /* Increase the font size of the title */
+  }
+  
+  .team-image {
+    border-radius: 15px;
+  }
+  
+  .team-section {
+    text-align: center; /* Center the heading horizontally */
+  }
+  
+  .team-title {
+    margin-bottom: 2em; /* Add space between the heading and team member section */
+    font-size: 2.5em; /* Increase the font size of the title */
+  }
+  
+  footer {
+    background-color: #072248;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-text {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+
+  .project-background-section {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .project-background-section h2 {
+    font-size: 2em;
+    margin-bottom: 75px;
+    margin-top: 75px;
+    text-align: center;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .box p {
+    line-height: 1.6;
+  }
+  
+  .rounded-image {
+    border-radius: 10px;
+  }
+  
+  /* Media query untuk di bawah 900px */
+  @media (max-width: 900px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin: 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .about {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      margin-top: 100px; /* Adjust the margin */
+    }
+  
+    .about .image, .about .text {
+      width: 100%;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+    .team-title {
+      font-size: 1.8em;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-background-section,
+    .team-section {
+      padding: 20px;
+    }
+  
+    .project-background-section h2,
+    .team-title {
+      font-size: 1.5em;
+    }
+  
+    .team-member {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .team-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    /* Bagian lain dari media query telah diabaikan untuk fokus pada perubahan yang dibutuhkan */
+  
+    .project-background-section,
+    .team-section {
+      padding: 20px;
+      flex-direction: column; /* Menata konten dalam satu kolom */
+      text-align: center; /* Memusatkan teks di tengah */
+      margin-top: 100px; /* Menyesuaikan margin */
+    }
+  
+    .team-image {
+      width: 100%; /* Lebarkan gambar agar sesuai dengan kontainer */
+      height: auto; /* Sesuaikan tinggi gambar agar proporsi tetap terjaga */
+    }
+  
+    /* Modifikasi ukuran font */
+    .hero h2 {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .about {
+      margin-top: 100px; /* Sesuaikan margin */
+    }
+  
+    .about .image,
+    .about .text {
+      width: 100%; /* Lebarkan konten agar sesuai dengan layar */
+    }
+  
+    .team-member {
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+    .team-title {
+      font-size: 1.8em;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  
+  /* Untuk Tablet */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .hero h2 {
+      font-size: 2rem;
+      padding: 20px;
+    }
+  
+    .about {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      margin-top: 150px; /* Adjust the margin */
+    }
+  
+    .about .image, .about .text {
+      width: 100%;
+    }
+  
+    .team-member {
+      width: 45%;
+      margin: 10px;
+    }
+  
+    .team-title {
+      font-size: 2em;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Untuk Desktops */
+  @media (min-width: 1025px) {
+    .hero h2 {
+      font-size: 2.5rem;
+      padding: 30px;
+    }
+  
+    .about {
+      flex-direction: row;
+      text-align: left;
+      padding: 30px;
+      margin-top: 200px; /* Adjust the margin */
+    }
+  
+    .about .image, .about .text {
+      width: 50%;
+    }
+  
+    .team-member {
+      width: 30%;
+      margin: 20px;
+    }
+  
+    .team-title {
+      font-size: 2.5em;
+    }
+  
+    footer {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  

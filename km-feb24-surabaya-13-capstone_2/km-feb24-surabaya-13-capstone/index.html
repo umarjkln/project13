@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Store</title>
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/dataTables.css">
+    <link rel="stylesheet" href="CSS/form_style.css">
+    <!-- datatable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #dashboard_pages, #feedback_pages{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="logo">
+            <h2>Super Store</h2>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="#" id="home_link">Home</a></li>
+              <li><a href="#about1" id='on_click_a'>About</a></li>
+              <li><a href="#" id="dashboard_link">Dashboard</a></li>
+              <li><a href="#" id="feedback_link">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home & about us -->
+    <main>
+        <section class="hero" id="home_section">
+            <h2><i>Capstone Project Software Development<br>by Team 13</i></h2>
+        </section>
+    <section class="about" id="about_section">
+        <style>
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/fixbg.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Set the z-index of the background image to be behind the text */
+        }
+        .hero {
+            position: relative; /* Ensure the hero element is positioned relative for the pseudo-element to be positioned absolute within it */
+        }
+    </style>
+      <div class="container">
+        <div class="about-section" id="about1">
+            <h1>About</h1>
+            <p>Welcome to Our Website</p>
+            <p>Website ini merupakan hasil kerja sama team 13-Surabaya untuk menyelesaikan tugas Capstone Project Software Development. Dalam website ini ditampilkan beberapa Visualisasi data dalam bentuk Dashboard yang merupakan hasil analisis dari modul sebelumnya yaitu Data Analitics.</p>
+        </div>
+        <script>
+          $(document).ready(function(){
+              $("#on_click_a").on('click', function(event) {
+                  event.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: $("#about1").offset().top
+                  }, 800); // 800 ms is the duration of the scroll animation
+              });
+          });
+      </script>
+        <div class="project-background-section">
+            <h2>Project Background</h2>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Superstore Background</h3>
+                    <p>Superstore merupakan sebuah perusahaan terkemuka di United State yang menjual berbagai kategori produk seperti teknologi, office supply, dan furniture.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Issue</h3>
+                    <p>Dengan meningkatnya permintaan dan persaingan ketat di pasar, Superstore ingin memahami produk, wilayah, kategori, dan segmen pelanggan mana yang harus mereka targetkan atau hindari.</p>
+                </div>
+                <div class="box">
+                    <h3>Problem Statement</h3>
+                    <p>Bagaimana meningkatkan profit pada superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Objective</h3>
+                    <p>Meningkatkan profit Superstore dari tahun 2017 hingga tahun 2018 sebesar 26,06%.</p>
+                </div>
+                <div class="box">
+                    <h3>Scope</h3>
+                    <p>Data diperoleh dari peningkatan profit pada Superstore dari tahun 2014 sampai dengan tahun 2017.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+        <section class="our-team" id="team_section">
+            <div class="team-section">
+              <br>
+              <br>
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-member">
+                  <img src="img/danny.jpg" width="200" height="200" alt="Team Member 1" class="team-image rounded-image">
+                  <p><b>Eka Surya Rizki Umardani</b></p>
+                  <p>Project Leader & Pitch Deck</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/elga.jpg" width="200" height="200" alt="Team Member 2" class="team-image rounded-image">
+                    <p><b>Elga Syahira</b></p>
+                    <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/aida.jpg" width="200" height="200" alt="Team Member 3" class="team-image rounded-image">
+                    <p><b>Zahrotus Syaidah</b></p>
+                  <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/umar.JPG" width="200" height="200" alt="Team Member 4" class="team-image rounded-image">
+                    <p><b>Umar Jeklin</b></p>
+                  <p>Front End Engineer</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/sam.jpg" width="200" height="200" alt="Team Member 5" class="team-image rounded-image">
+                    <p><b>Muhammad Khysam Firdaus</b></p>
+                  <p>Front End Engineer & Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/aqil.jpg" width="200" height="200" alt="Team Member 6" class="team-image rounded-image">
+                    <p><b>Aqil Nabila Musaffa</b></p>
+                  <p>Front End Engineer & Website Development</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/chikka.jpg" width="200" height="200" alt="Team Member 7" class="team-image rounded-image">
+                    <p><b>Chikka Dwiyandhini Prameswari</b></p>
+                  <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/winna.jpg" width="200" height="200" alt="Team Member 8" class="team-image rounded-image">
+                    <p><b>Winna Elysia</b></p>
+                    <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/puji.jpg" width="200" height="200" alt="Team Member 9" class="team-image rounded-image">
+                    <p><b>Puji Nurhidayah</b></p>
+                    <p>Pitch Deck</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/aminun.jpg" width="200" height="200" alt="Team Member 10" class="team-image rounded-image">
+                    <p><b>Aminun Ihsani</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/andika.jpg" width="200" height="200" alt="Team Member 11" class="team-image rounded-image">
+                    <p><b>Andika Tri Octa Setiawan</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="img/diva.jpg" width="200" height="200" alt="Team Member 12" class="team-image rounded-image">
+                    <p><b>Diva Asih Azzahra</b></p>
+                    <p>Quality Assurance</p>
+                  </div>
+              </div>
+        </section>
+    </main>
+
+    <!-- menampilkan halaman atas dashboard -->
+    <section id="dashboard_pages">
+    <h2 class="dash-title">Dashboard</h2>
+    <div class="info-data">
+        <div class="card-info-data p1" style="color: black;">
+            <img src="/img/box-32x32.png" alt="">
+            <h3>$1530540,952</h3>
+            <p>Total Sales</p>
+        </div>
+        <div class="card-info-data p1" style="color: black;">
+            <img src="/img/shop-32x32.png" alt="">
+            <h3>9993</h3>
+            <p>Total Orders</p>
+        </div>
+        <div class="card-info-data p2" style="color: black;">
+            <img src="/img/customer-32x32.png" alt="">
+            <h3>793</h3>
+            <p>Total Customer</p>
+        </div>
+        <div class="card-info-data p2" style="color: black;">
+            <img src="/img/flag-32x32.png" alt="">
+            <h3>49</h3>
+            <p>Total State</p>
+        </div>
+    </div>
+    <div class="sales_trends_container">
+        <div class="sales_trends_header">
+            Profit Trends
+        </div>
+        <div class="card_sales_trends">
+            <div class="chart-sales-container">
+                <canvas id="profitByYearChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- selesai menampilkan halaman atas dashboard -->
+
+        <!-- grafik profit diagram donat -->
+    <div class="profit-chart">
+        <div class="chart-item gd1">
+            <div class="chart-option">
+                <select name="profit-gd-1" id="profit-gd-1">
+                    <option value="segment_profit" id="select">Profit By Segment</option>
+                    <option value="consumer_profit" id="consumer_profit">Top Profit By Consumer</option>
+                    <option value="ho_profit" id="ho_profit">Top Profit By Home Office</option>
+                    <option value="corporate_profit" id="corporate_profit">Top Profit By Corporate</option>
+                </select>
+            </div>
+
+            <div class="container_profit">
+                <canvas id="segment"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-item gd2">
+            <div class="chart-option">
+                <select name="profit-gd-2" id="profit-gd-2">
+                    <option value="category_profit" id="category_profit">Profit By Category</option>
+                    <option value="technology_profit" id="technology_profit">Top Profit By Technology</option>
+                    <option value="OS_profit" id="OS_profit">Top Profit By Office Supplies</option>
+                    <option value="furniture_profit" id="furniture_profit">Top Profit By Furniture</option>
+                </select>
+            </div>
+
+            <div class="container_profit">
+                <canvas id="category"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-item gd3">
+            <p class="description">Profit by Region</p>
+            <div class="container_profit">
+                <canvas id="region"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- selesai menampilkan grafik -->
+    <script src="JS/script.js"></script>
+
+
+    <!-- bagian menampilkan tabel -->
+    <table id="example" class="display" style="width: 100%">
+      <thead>
+          <tr>
+              <th>Region</th>
+              <th>Segment</th>
+              <th>Category</th>
+              <th>Profit</th>
+          </tr>
+      </thead>
+      <tbody id="example-body">
+          <!-- data will be rendered here -->
+      </tbody>
+  </table>
+  <select id="opsi">
+      <option onclick="deleteFilter()">Filter By Region</option>
+    <option onclick="filterRegion('Central')">Central</option>
+    <option onclick="filterRegion('West')">West</option>
+    <option onclick="filterRegion('South')">South</option>
+    <option onclick="filterRegion('East')">East</option>
+  </select>
+  
+  
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- datatable -->
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+  <script>
+      let table;
+      document.addEventListener("DOMContentLoaded", (event) => {
+          const tBody = document.getElementById("example-body");
+          table = new DataTable("#example", {
+              stateSave: true,
+              stateLoadParams: function (settings, data) {
+                  data.search.search = "";
+              },
+              responsive: true,
+              columns: [
+                  { data: "Region" },
+                  { data: "Segment" },
+                  { data: "Category" },
+                  { data: "Profit" },
+              ],
+          });
+          fetch("profit_json/data.json")
+              .then((res) => res.json())
+              .then((data) => {
+                  data.forEach((item) => {
+                      // cara ideal
+                      table.row
+                          .add({
+                              Region: item.Region,
+                              Segment: item.Segment,
+                              Category: item.Category,
+                              Profit: item.Profit,
+                          })
+                          .draw();
+                  });
+              });
+      });
+
+      function filterRegion(region) {
+          if (table) {
+              table
+                  .search(function (row, data) {
+                      return data["Region"] === region;
+                  })
+                  .draw();
+          }
+      }
+      function deleteFilter() {
+      if (table) {
+        table.search("").draw();
+      }
+    }
+
+  </script>
+    <!--selesai menampilkan tabel-->
+</section>
+
+<!-- menampilkan feedback form -->
+<section id="feedback_pages">
+    <div class="container-form">
+        <h1>Contact Us</h1>
+        <p class="sub-title-form">
+          Let us know your questions, suggestions and concerns by filling out the
+          contact form below.
+        </p>
+        <form action="#" method="post" id="contact-form">
+          <div class="name-form form-group">
+            <div class="group-name">
+              <label for="first-name" class="form-label">First Name</label><br />
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Enter your first name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="group-name">
+              <label for="last-name" class="form-label">Last Name</label><br />
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Enter your last name"
+                class="form-input"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="form-input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="5"
+              class="form-input"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-submit">Submit</button>
+          </div>
+        </form>
+        <div class="popup" id="popup">
+          <img src="img/checklist.png" />
+          <h2>Thank You!</h2>
+          <p>Your response has been submitted. Thanks!</p>
+          <button type="button" id="close-popup-btn">OK</button>
+        </div>
+      </div>
+  
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var form = document.getElementById("contact-form");
+          var popup = document.getElementById("popup");
+          var closePopupBtn = document.getElementById("close-popup-btn");
+  
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Mencegah form dari pengiriman biasa
+            popup.classList.add("open-popup");
+          });
+  
+          closePopupBtn.addEventListener("click", function () {
+            popup.classList.remove("open-popup");
+          });
+        });
+      </script>
+</section>
+
+
+<!-- menampilkan footer -->
+<footer>
+    <div class="footer-text">
+        &copy; 2024 RevoU Software Engineer Section Surabaya Team 13. All Rights Reserved.
+      </div>
+</footer>
+
+<!-- script untuk halaman index.html -->
+<script>
+    $(document).ready(function(){
+            $("#feedback_link").click(function(){
+                $("#home_section").hide();
+                $("#about_section").hide();
+                $("#team_section").hide();
+                $("#dashboard_pages").hide();
+                $("#feedback_pages").show();
+            });
+
+            $("#dashboard_link").click(function(){
+                $("#home_section").hide();
+                $("#about_section").hide();
+                $("#team_section").hide();
+                $("#dashboard_pages").show();
+                $("#feedback_pages").hide();
+            });
+
+            $("#home_link").click(function(){
+                $("#home_section").show();
+                $("#about_section").show();
+                $("#team_section").show();
+                $("#dashboard_pages").hide();
+                $("#feedback_pages").hide();
+            });
+        });
+</script>
+</body>
+
+</html>
